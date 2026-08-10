@@ -28,6 +28,7 @@ jobs:
       - run: npm ci
 
       # Crush PNG file sizes before building — 20MB logo is a page-killer
+      - run: sudo apt-get install -y pngquant
       - run: pngquant --quality=60-80 --force --ext .png ART/LOGO.png ART/SIGIL.png
 
       - run: npm run build
