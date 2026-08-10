@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GIVE US THIS DAY - Official merch and updates." />
+    <title>GIVE US THIS DAY</title>
+    <link rel="icon" type="image/png" href="/SIGIL.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+
+    <header>
+      <a class="logo" href="#" aria-label="GIVE US THIS DAY home">
+        <img src="/SIGIL.png" alt="GIVE US THIS DAY" class="logo-img" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span aria-hidden="true">&#9776;</span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="site-nav" aria-label="Main">
+        <a href="#music">MUSIC</a>
+        <a href="#shows">SHOWS</a>
+        <a href="#merch">MERCH</a>
+        <a href="#about">ABOUT</a>
+        <a href="/links/">LINKS</a>
+        <a href="/booking/" class="nav-booking">BOOKING</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <img src="/LOGO.png" alt="GIVE US THIS DAY" class="hero-logo" />
+        </div>
+      </section>
+
+      <section id="merch" class="block">
+        <div class="block-label">[ MERCH STORE ]</div>
+        <div class="merch-grid">
+
+          <article class="product">
+            <div class="product-img" aria-label="Product 1"></div>
+            <div class="product-info">
+              <button class="add-btn" type="button">ADD TO CART</button>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img" aria-label="Product 2"></div>
+            <div class="product-info">
+              <button class="add-btn" type="button">ADD TO CART</button>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img" aria-label="Product 3"></div>
+            <div class="product-info">
+              <button class="add-btn" type="button">ADD TO CART</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="music" class="block block--dark stub">
+        <div class="block-label">[ MUSIC ]</div>
+      </section>
+
+      <section id="shows" class="block stub">
+        <div class="block-label">[ SHOWS ]</div>
+      </section>
+
+      <section id="about" class="block block--dark stub">
+        <div class="block-label">[ ABOUT ]</div>
+      </section>
+
+    </main>
+
+    <footer>
+      <span>&#169; 2026 GIVE US THIS DAY</span>
+      <a href="#home">&#8593; TOP</a>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

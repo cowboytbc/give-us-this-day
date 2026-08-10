@@ -1,0 +1,115 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --red: #cc0000;
+  --grey-mid: #2a2a2a;
+  --grey-text: #555;
+  --font: "Courier New", Courier, monospace;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-family: var(--font);
+  background-color: var(--black);
+  background-image: url('/SIGIL.png');
+  background-repeat: repeat;
+  background-size: 220px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(#cc0000 0% 25%, #1a003a 25% 50%, #ff2200 50% 75%, #0a0a0a 75% 100%) 0 0 / 440px 440px;
+  mix-blend-mode: hard-light;
+  opacity: 0.9;
+}
+
+.page {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+  background: rgba(0,0,0,0.97);
+}
+
+.home-link {
+  position: absolute;
+  top: 40px;
+  left: 24px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+  text-decoration: none;
+  transition: color 0.1s;
+}
+.home-link:hover { color: var(--red); }
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.sigil { display: none; }
+
+.logo {
+  width: 260px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--grey-mid);
+}
+
+.link-btn {
+  display: block;
+  padding: 18px 24px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  border-bottom: 1px solid var(--grey-mid);
+  text-align: center;
+  transition: background 0.1s, color 0.1s;
+}
+.link-btn:last-child { border-bottom: none; }
+.link-btn:hover { background: var(--red); color: var(--white); }
+
+footer {
+  margin-top: 32px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+}

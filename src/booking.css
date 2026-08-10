@@ -1,0 +1,144 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --red: #cc0000;
+  --grey: #111;
+  --grey-mid: #2a2a2a;
+  --grey-text: #555;
+  --font: "Courier New", Courier, monospace;
+}
+
+html, body { min-height: 100%; }
+
+body {
+  font-family: var(--font);
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding: 0 0 60px;
+}
+
+.page {
+  width: 100%;
+  max-width: 600px;
+  padding: 48px 24px 0;
+  position: relative;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+  text-decoration: none;
+  margin-bottom: 40px;
+  transition: color 0.1s;
+}
+.back-link:hover { color: var(--red); }
+
+header {
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.sub {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--grey-text);
+  text-transform: uppercase;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+}
+
+.opt { font-size: 9px; letter-spacing: 0.1em; }
+
+input, select, textarea {
+  font-family: var(--font);
+  font-size: 13px;
+  background: var(--grey);
+  color: var(--white);
+  border: 1px solid var(--grey-mid);
+  padding: 13px 14px;
+  outline: none;
+  transition: border-color 0.1s;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input::placeholder, textarea::placeholder { color: var(--grey-text); }
+
+input:focus, select:focus, textarea:focus { border-color: var(--red); }
+
+select { cursor: pointer; }
+select option { background: var(--grey); }
+
+textarea { resize: vertical; min-height: 130px; }
+
+.submit-btn {
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  background: var(--white);
+  color: var(--black);
+  border: 2px solid var(--white);
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+  width: 100%;
+  margin-top: 8px;
+}
+.submit-btn:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+
+footer {
+  margin-top: 48px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--grey-text);
+  text-transform: uppercase;
+  border-top: 1px solid var(--grey-mid);
+  padding-top: 20px;
+}
+
+/* booking link highlight in main nav */
+.nav-booking { color: var(--red) !important; }
+
+:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+@media (max-width: 480px) {
+  .page { padding: 36px 16px 0; }
+}
