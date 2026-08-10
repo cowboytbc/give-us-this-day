@@ -46,7 +46,7 @@ nav a:hover { color: var(--white); }
 .stub-text { font-family: var(--font); font-size: 12px; letter-spacing: 0.2em; color: var(--grey-text); text-transform: uppercase; }
 
 /* MERCH GRID */
-.merch-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--grey-mid); border: 1px solid var(--grey-mid); margin-bottom: 32px; }
+.merch-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--grey-mid); border: 1px solid var(--grey-mid); margin-bottom: 32px; }
 .product { background: var(--black); display: flex; flex-direction: column; }
 .product-img { aspect-ratio: 1; background: var(--grey); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border-bottom: 1px solid var(--grey-mid); position: relative; overflow: hidden; }
 .product-sigil { width: 55%; height: auto; object-fit: contain; opacity: 0.18; filter: invert(1); position: relative; }
@@ -56,7 +56,13 @@ nav a:hover { color: var(--white); }
 .product-desc { font-family: var(--font); font-size: 11px; color: var(--grey-text); line-height: 1.6; flex: 1; }
 .product-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; border-top: 1px solid var(--grey-mid); padding-top: 14px; }
 .price { font-family: var(--font); font-size: 15px; font-weight: bold; letter-spacing: 0.05em; }
-.add-btn { font-family: var(--font); font-size: 9px; font-weight: bold; letter-spacing: 0.2em; text-transform: uppercase; background: none; color: var(--white); border: 1px solid var(--grey-mid); padding: 8px 12px; cursor: pointer; transition: background 0.1s, color 0.1s, border-color 0.1s; }
+.add-btn { font-family: var(--font); font-size: 9px; font-weight: bold; letter-spacing: 0.2em; text-transform: uppercase; background: none; color: var(--white); border: 1px solid var(--grey-mid); padding: 8px 12px; cursor: pointer; transition: background 0.1s, color 0.1s, border-color 0.1s; text-decoration: none; display: inline-block; }
+.add-btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+.product-name { font-family: var(--font); font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+.product-price { font-family: var(--font); font-size: 11px; color: var(--grey-text); letter-spacing: 0.05em; margin-bottom: 14px; }
+.size-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.size-btn { font-family: var(--font); font-size: 9px; font-weight: bold; letter-spacing: 0.15em; text-transform: uppercase; color: var(--white); border: 1px solid var(--grey-mid); padding: 7px 10px; text-decoration: none; transition: background 0.1s, color 0.1s, border-color 0.1s; }
+.size-btn:hover { background: var(--red); color: var(--white); border-color: var(--red); }
 .add-btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
 .merch-note { font-family: var(--font); font-size: 10px; letter-spacing: 0.15em; color: var(--grey-text); text-transform: uppercase; }
 
