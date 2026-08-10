@@ -30,8 +30,9 @@ nav a:hover { color: var(--white); }
 /* HERO */
 /* sigil 220px = one per colour quadrant; offsets calculated so both layers start at the same pixel */
 .hero { min-height: 100svh; padding-top: 56px; display: flex; align-items: center; position: relative; overflow: hidden; background-color: var(--black); background-image: repeating-conic-gradient(#cc0000 0% 25%, #1a003a 25% 50%, #ff2200 50% 75%, #0a0a0a 75% 100%), url('/SIGIL.png'); background-size: 440px 440px, 220px 220px; background-position: 50% 50%, calc(50% - 110px) calc(50% - 110px); background-repeat: repeat; background-blend-mode: hard-light, normal; border-bottom: 1px solid var(--red); }
-.hero-logo { width: clamp(280px, 55vw, 820px); height: auto; object-fit: contain; filter: brightness(0) invert(1) drop-shadow(0 0 60px rgba(0,0,0,1)) drop-shadow(0 0 120px rgba(0,0,0,1)) drop-shadow(0 0 200px rgba(0,0,0,0.95)); position: relative; z-index: 1; }
+.hero-logo { width: clamp(280px, 55vw, 820px); height: auto; object-fit: contain; filter: brightness(0) invert(1); position: relative; z-index: 1; }
 .hero-content { position: relative; z-index: 2; padding: 0 clamp(24px, 7vw, 96px); display: flex; align-items: center; justify-content: center; width: 100%; }
+.hero-content::before { content: ''; position: absolute; inset: -60% -30%; background: radial-gradient(ellipse at center, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.55) 40%, transparent 72%); z-index: 0; pointer-events: none; }
 .hero h1 { font-family: var(--font); font-size: clamp(72px, 16vw, 210px); font-weight: 900; line-height: 0.85; letter-spacing: -0.03em; text-transform: uppercase; margin-bottom: 32px; }
 .sub { font-size: 12px; color: var(--grey-text); letter-spacing: 0.12em; margin-bottom: 40px; border-left: 2px solid var(--red); padding-left: 14px; }
 .btn { display: inline-block; font-family: var(--font); font-size: 12px; font-weight: bold; letter-spacing: 0.2em; color: var(--black); background: var(--white); padding: 13px 26px; border: 2px solid var(--white); transition: background 0.1s, color 0.1s, border-color 0.1s; }
