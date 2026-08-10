@@ -391,6 +391,39 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Git Commit",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"commit",
+				"-m",
+				"add Open Graph and Twitter card meta tags for social sharing"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Git Push",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"push"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Git Add",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				"."
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }

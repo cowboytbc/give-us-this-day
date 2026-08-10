@@ -15,8 +15,8 @@ body {
   font-family: var(--font);
   background-color: var(--black);
   background-image: repeating-conic-gradient(#cc0000 0% 25%, #1a003a 25% 50%, #ff2200 50% 75%, #0a0a0a 75% 100%), url('/SIGIL.png');
-  background-size: 440px 440px, 440px 440px;
-  background-position: center center;
+  background-size: 440px 440px, 220px 220px;
+  background-position: 50% 50%, calc(50% - 110px) calc(50% - 110px);
   background-repeat: repeat;
   background-blend-mode: hard-light, normal;
   color: var(--white);
