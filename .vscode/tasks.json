@@ -589,6 +589,80 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Git Commit",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"commit",
+				"-m",
+				"remove snapback, remove links pop art"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Git Push",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"push"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Rename shirt images",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"Rename-Item 'ART\\SHIRT 1 FRONT.jpg' 'SHIRT-FRONT.jpg'; Rename-Item 'ART\\SHIRT 1 BACK.jpg' 'SHIRT-BACK.jpg'"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Rename shirt images",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"Rename-Item -Path \"ART\\SHIRT 1 FRONT.jpg\" -NewName \"SHIRT-FRONT.jpg\"; Rename-Item -Path \"ART\\SHIRT 1 BACK.jpg\" -NewName \"SHIRT-BACK.jpg\""
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Rename shirts",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"rename-shirts.mjs"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Cleanup",
+			"type": "shell",
+			"command": "del",
+			"args": [
+				"rename-shirts.mjs"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Git Add",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				"."
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
