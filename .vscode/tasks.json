@@ -480,6 +480,82 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Git Commit",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"commit",
+				"-m",
+				"merch: Stripe payment links, size buttons, product names"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Git Push",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"push"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Install sharp",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"install",
+				"--save-dev",
+				"sharp"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Make Stripe images",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"make-stripe-images.mjs"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Uninstall sharp",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"uninstall",
+				"sharp"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Cleanup",
+			"type": "shell",
+			"command": "del",
+			"args": [
+				"make-stripe-images.mjs"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Git Add",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				"."
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
