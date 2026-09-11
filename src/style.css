@@ -94,7 +94,12 @@ footer a:hover { color: var(--red); }
   nav a { padding: 20px 20px; font-size: 14px; border-bottom: 1px solid var(--grey-mid); color: var(--white); pointer-events: all; }
   .menu-toggle { display: block; }
   .merch-grid { grid-template-columns: 1fr; }
+  .hero { min-height: auto; padding-top: 72px; padding-bottom: 48px; }
+  .hero-content { padding: 20px 16px 0; }
+  .hero-promo-frame { width: 88vw; }
+  .hero-promo { max-height: none; }
   .hero h1 { font-size: clamp(64px, 21vw, 130px); }
+  .hero-logo { width: clamp(120px, 36vw, 190px); }
   .hero-sigil { max-width: 90vw; opacity: 0.05; }
   footer { flex-direction: column; gap: 8px; text-align: center; padding: 18px; }
 }

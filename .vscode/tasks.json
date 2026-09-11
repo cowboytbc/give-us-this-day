@@ -751,6 +751,17 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Git Add",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				"src/style.css"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
