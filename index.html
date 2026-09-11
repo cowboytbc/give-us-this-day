@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="GIVE US THIS DAY - Official merch and updates." />
+    <meta name="description" content="GIVE US THIS DAY is an East Texas deathcore band delivering heavy music with a clear, direct message. Explore merch, music, and booking." />
+    <link rel="canonical" href="https://giveusthisday.site/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://giveusthisday.site/" />
     <meta property="og:title" content="GIVE US THIS DAY" />
@@ -13,11 +14,31 @@
     <meta name="twitter:title" content="GIVE US THIS DAY" />
     <meta name="twitter:description" content="Deathcore. Merch. Booking." />
     <meta name="twitter:image" content="https://giveusthisday.site/LOGO.png" />
-    <title>GIVE US THIS DAY</title>
+    <title>GIVE US THIS DAY | East Texas Deathcore</title>
     <link rel="icon" type="image/png" href="/SIGIL.png" />
     <link rel="preload" href="/LOGO.png" as="image" />
     <link rel="preload" href="/SIGIL.png" as="image" />
     <link rel="stylesheet" href="/src/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "GIVE US THIS DAY",
+        "url": "https://giveusthisday.site/",
+        "genre": "Deathcore",
+        "description": "GIVE US THIS DAY is an East Texas deathcore band delivering heavy music with a clear, direct message.",
+        "image": "https://giveusthisday.site/LOGO.png",
+        "location": {
+          "@type": "Place",
+          "name": "East Texas"
+        },
+        "sameAs": [
+          "https://www.facebook.com/GIVEUSTHISDAYBAND",
+          "https://www.youtube.com/@giveusthisdayband",
+          "https://www.tiktok.com/@giveusthisdayband"
+        ]
+      }
+    </script>
   </head>
   <body>
 
@@ -31,7 +52,6 @@
       </button>
       <nav id="site-nav" aria-label="Main">
         <a href="#music">MUSIC</a>
-        <a href="#shows">SHOWS</a>
         <a href="#merch">MERCH</a>
         <a href="#about">ABOUT</a>
         <a href="/links/">LINKS</a>
@@ -43,7 +63,10 @@
 
       <section class="hero" id="home">
         <div class="hero-content">
-          <img src="/LOGO.png" alt="GIVE US THIS DAY" class="hero-logo" />
+          <div class="hero-promo-frame">
+            <img src="/Band-Standing-Clean.jpg" alt="GIVE US THIS DAY band promo photo" class="hero-promo" />
+            <img src="/LOGO.png" alt="GIVE US THIS DAY" class="hero-logo" />
+          </div>
         </div>
       </section>
 
@@ -52,7 +75,7 @@
         <div class="merch-grid">
 
           <article class="product">
-            <div class="product-img shirt-viewer" aria-label="Shirt" role="button" tabindex="0" aria-label="Tap to see other side">
+            <div class="product-img shirt-viewer" aria-label="Shirt" role="button" tabindex="0" aria-pressed="false">
               <img src="/SHIRT-BACK.jpg" alt="Back of shirt" class="shirt-img shirt-back" />
               <img src="/SHIRT-FRONT.jpg" alt="Front of shirt" class="shirt-img shirt-front" />
               <img src="/SIGIL.png" alt="" class="shirt-sigil" aria-hidden="true" />
@@ -76,14 +99,18 @@
 
       <section id="music" class="block block--dark stub">
         <div class="block-label">[ MUSIC ]</div>
-      </section>
-
-      <section id="shows" class="block stub">
-        <div class="block-label">[ SHOWS ]</div>
+        <div class="music-teaser">
+          <img src="/teaser%20pic.jpg" alt="Give Us This Day debut single teaser — release date November 11, 2026" />
+        </div>
       </section>
 
       <section id="about" class="block block--dark stub">
         <div class="block-label">[ ABOUT ]</div>
+        <div class="about-copy">
+          <p><strong>GIVE US THIS DAY</strong> is a deathcore band based out of East Texas, formed around a collective goal of delivering heavy music with a clear, direct message.</p>
+          <p>The project was initially conceived by guitarist <strong>Josh McGuire</strong> and bassist <strong>Bobby Edwards</strong> following their departure from the Texas-based metal band <em>The Dialectic</em>. Looking to establish a fresh musical direction while staying true to their heavy roots, the duo quickly began assembling an experienced lineup of musicians from across the regional underground scene.</p>
+          <p>Fronting the band is vocalist <strong>Nick "BigBoss" Dellitalia</strong>, formerly of the deathcore outfit <em>All Is Taken</em>. The lineup is rounded out by <strong>Matt Calhoun</strong> handling co-guitar duties alongside McGuire, and drummer <strong>Mark Guerrero</strong>—previously of <em>Twelve Gauge Face-Lift</em> and <em>Before the Throne</em>—providing the band's crushing rhythmic foundation.</p>
+        </div>
       </section>
 
     </main>

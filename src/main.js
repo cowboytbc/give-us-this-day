@@ -23,10 +23,8 @@ if (viewer) {
   const toggle = () => {
     const showingFront = viewer.classList.toggle('show-front')
     label.textContent = showingFront ? 'FRONT' : 'BACK'
+    viewer.setAttribute('aria-pressed', String(showingFront))
   }
   viewer.addEventListener('click', toggle)
   viewer.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') toggle() })
-  // On desktop, hover already handles it — sync label on mouseenter/leave
-  viewer.addEventListener('mouseenter', () => { label.textContent = 'FRONT' })
-  viewer.addEventListener('mouseleave', () => { label.textContent = viewer.classList.contains('show-front') ? 'FRONT' : 'BACK' })
 }
