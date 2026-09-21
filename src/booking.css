@@ -69,6 +69,10 @@ header {
   gap: 28px;
 }
 
+.form-status, .field-error { display: none; }
+.form-status[data-fs-active], .field-error[data-fs-active] { display: block; color: var(--white); background: #260000; border-left: 2px solid var(--red); padding: 10px 12px; font-size: 10px; letter-spacing: 0.08em; }
+.field-error[data-fs-active] { margin-top: 2px; padding: 7px 9px; }
+
 .field {
   display: flex;
   flex-direction: column;
@@ -102,6 +106,7 @@ input, select, textarea {
 input::placeholder, textarea::placeholder { color: var(--grey-text); }
 
 input:focus, select:focus, textarea:focus { border-color: var(--red); }
+input[aria-invalid="true"], select[aria-invalid="true"], textarea[aria-invalid="true"] { border-color: var(--red); }
 
 select { cursor: pointer; }
 select option { background: var(--grey); }
@@ -124,6 +129,7 @@ textarea { resize: vertical; min-height: 130px; }
   margin-top: 8px;
 }
 .submit-btn:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+.submit-btn:disabled { cursor: wait; opacity: 0.6; }
 
 footer {
   margin-top: 48px;

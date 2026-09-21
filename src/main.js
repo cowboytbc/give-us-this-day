@@ -16,6 +16,21 @@ navigation.querySelectorAll('a').forEach((link) => {
   })
 })
 
+const bookingSuccess = document.querySelector('#booking-success')
+const pageUrl = new URL(window.location.href)
+
+if (bookingSuccess && pageUrl.searchParams.get('booking') === 'sent') {
+  bookingSuccess.hidden = false
+  bookingSuccess.focus()
+
+  pageUrl.searchParams.delete('booking')
+  window.history.replaceState({}, '', `${pageUrl.pathname}${pageUrl.search}${pageUrl.hash}`)
+
+  bookingSuccess.querySelector('button').addEventListener('click', () => {
+    bookingSuccess.hidden = true
+  })
+}
+
 // Shirt viewer — tap to toggle front/back on mobile
 const viewer = document.querySelector('.shirt-viewer')
 if (viewer) {

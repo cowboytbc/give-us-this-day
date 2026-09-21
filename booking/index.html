@@ -29,36 +29,42 @@
       </header>
 
       <form
+        id="booking-form"
         action="https://formspree.io/f/xppwprlj"
         method="POST"
         class="booking-form"
       >
         <input type="hidden" name="_subject" value="New GIVE US THIS DAY booking enquiry" />
+        <div class="form-status form-status--error" data-fs-error role="alert"></div>
 
         <div class="field">
           <label for="name">CONTACT NAME</label>
-          <input id="name" name="name" type="text" required placeholder="Your name" />
+          <input id="name" name="name" type="text" required placeholder="Your name" data-fs-field />
+          <span class="field-error" data-fs-error="name"></span>
         </div>
 
         <div class="field">
           <label for="org">ORGANISATION</label>
-          <input id="org" name="organisation" type="text" required placeholder="Venue / label / promoter name" />
+          <input id="org" name="organisation" type="text" required placeholder="Venue / label / promoter name" data-fs-field />
+          <span class="field-error" data-fs-error="organisation"></span>
         </div>
 
         <div class="field">
           <label for="type">ENQUIRY TYPE</label>
-          <select id="type" name="type" required>
+          <select id="type" name="type" required data-fs-field>
             <option value="" disabled selected>Select one</option>
             <option value="Venue">Venue / Show booking</option>
             <option value="Label">Record label</option>
             <option value="Festival">Festival / event</option>
             <option value="Other">Other</option>
           </select>
+          <span class="field-error" data-fs-error="type"></span>
         </div>
 
         <div class="field">
           <label for="email">YOUR EMAIL</label>
-          <input id="email" name="email" type="email" required placeholder="your@email.com" />
+          <input id="email" name="email" type="email" required placeholder="your@email.com" data-fs-field />
+          <span class="field-error" data-fs-error="email"></span>
         </div>
 
         <div class="field">
@@ -68,13 +74,15 @@
 
         <div class="field">
           <label for="message">DETAILS</label>
-          <textarea id="message" name="message" rows="6" required placeholder="Date, venue capacity, offer, or anything else relevant..."></textarea>
+          <textarea id="message" name="message" rows="6" required placeholder="Date, venue capacity, offer, or anything else relevant..." data-fs-field></textarea>
+          <span class="field-error" data-fs-error="message"></span>
         </div>
 
-        <button class="submit-btn" type="submit">SEND ENQUIRY</button>
+        <button class="submit-btn" type="submit" data-fs-submit-btn>SEND ENQUIRY</button>
       </form>
 
       <footer>GIVE US THIS DAY &copy; 2026 &mdash; giveusthisdayband@gmail.com</footer>
     </div>
+    <script type="module" src="/src/booking.js"></script>
   </body>
 </html>
