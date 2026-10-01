@@ -762,6 +762,31 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Git Commit",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"commit",
+				"-m",
+				"improve mobile hero layout"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Git Push",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"push",
+				"-u",
+				"origin",
+				"main"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
