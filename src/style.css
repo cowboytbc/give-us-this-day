@@ -58,7 +58,7 @@ nav a:hover { color: var(--white); }
 .about-copy { max-width: 720px; color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: clamp(17px, 2.2vw, 26px); line-height: 1.45; letter-spacing: 0.02em; }
 .about-copy p + p { margin-top: 20px; color: var(--grey-text); }
 .music-teaser { max-width: 980px; margin: 0 auto; border: 1px solid var(--grey-mid); background: var(--black); }
-.music-teaser img { display: block; width: 100%; height: auto; }
+.music-teaser iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
 
 /* MERCH GRID */
 .merch-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--grey-mid); border: 1px solid var(--grey-mid); margin-bottom: 32px; max-width: 480px; }
